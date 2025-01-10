@@ -18,12 +18,6 @@
       <input type="radio" name="cardselect" value="rupay" placeholder="RuPay">Rupay<br>
       <input type="radio" name="cardselect" value="notavialable" placeholder="No Card">No Card<br>
       <br>
-      <div> 
-     <input type="checkbox" name="pizza" value="Pizza">Pizza <br>
-     <input type="checkbox" name="hamburgur" value="Hamburgur">Hamburgur <br>
-     <input type="checkbox" name="hotdog" value="Hotdog">Hotdog <br>
-     <input type="checkbox" name="taco" value="Taco">Taco <br>
-      </div>
     <input type="submit" name="submit" value="submit"> 
     </form>
 </body>
@@ -53,6 +47,8 @@ if (isset($_POST["submit"])) {
     } else {
         echo"Plese select the card";
     }
+
+
 
 
 }
