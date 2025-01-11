@@ -14,8 +14,8 @@ $quantity = 9;
 
 // NOTE: float
 $gpa = 9.3;
-$tax = 12;
-$price = 1999;
+$tax = 12.3;
+$price = 19.99;
 
 // NOTE: bollean
 $employed = true;

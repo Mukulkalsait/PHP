@@ -3,7 +3,7 @@
 
 $citizen = true;
 $age = -11;
-$age = abs($age);
+$age = abs($age); // absolute.
 
 // IMP:  conventional way
 // if ($citizen && $age >= 18) {
@@ -13,7 +13,19 @@ $age = abs($age);
 // }
 //
 
-// B:  Alternative way :
+// G:   Make sure to use this most tims.
+// **************************************
+// B:   Alternative way :
+
+
+// DX:
+// --
+// if($citizen && $age >= 18)
+// --
+// mean both should be true
+// ∴ which also mean
+// --
+// "NOT EVEN 1 FALSE"   <------------
 
 if (!$citizen || $age < 18) {
     echo "Yore are not eligible to vote.";

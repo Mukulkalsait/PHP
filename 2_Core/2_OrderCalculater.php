@@ -9,7 +9,7 @@
 
     <form action="2_OrderCalculater.php" method="post"> 
       <select name="food" id="">
-      
+        <option value=""></option>
         <option value="pizza">pizza</option>
         <option value="pasta">pasta</option>
         <option value="sandwitch">sandwitch</option>
@@ -28,20 +28,47 @@
 <?php
 
 $food = $_POST["food"];
-$val = $_POST["amount"];
+$num_of_plates = $_POST["amount"];
 $total = null;
 
-if ($food == "pizza") {
-    $total = $val * 199;
 
-} elseif ($food == "pasta") {
-    $total = $val * 120;
-} elseif ($food == "sandwitch") {
-    $total = $val * 99;
-} elseif ($food == "HotDog") {
-    $total = $val * 59;
-} else {
-    $total = $val * 79;
+$foodArray = [
+  "pizza" => 199,
+  "pasta" => 120,
+  "sandwitch" => 99,
+  "HotDog" => 59,
+  "burger" => 79,
+];
+
+
+if (isset($_POST["submit"])) {
+    if (empty($food) || empty($num_of_plates)) { // IMP: here if (a || b) even one of them is eampty then if= true ∴ not working
+        echo"<p style=\"color: red;\"> Option and number of Plates are menditory !!!</p>";
+    } else {
+        $cost = $foodArray["{$food}"];
+        $total = $cost * $num_of_plates;
+        echo"<p style=\"color: white;\">Cost of One {$food} is = {$cost}.</p>";
+        echo"∴ Your Total for {$num_of_plates} plates fo {$food} is =<span style=\"color: green;\"> {$total} </rpan>";
+    }
+    // debhging
+    // echo"<br>{$food}<br> <br>{$num_of_plates}";
+    // $food = null;
+    // $num_of_plates = null;
 }
 
-echo "You have selected {$val} {$food} hence your total is {$total}.";
+
+// G2: older way ---
+//  -
+// if ($food == "pizza") {
+//     $total = $num_of_plates * 199;
+// } elseif ($food == "pasta") {
+//     $total = $num_of_plates * 120;
+// } elseif ($food == "sandwitch") {
+//     $total = $num_of_plates * 99;
+// } elseif ($food == "HotDog") {
+//     $total = $num_of_plates * 59;
+// } else {
+//     $total = $num_of_plates * 79;
+// }
+// echo "You have selected {$val} {$food} hence your total is {$total}.";
+//

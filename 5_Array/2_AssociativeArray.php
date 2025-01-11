@@ -10,16 +10,21 @@ $capitals = array(
    );
 
 echo $capitals["India"] . "\n";
+
+//-IMP:--------------------------------------------
 // B: this will change the exiting pair.
 $capitals["USA"] = "Los Vegas (changed in program)";
-// B: this will add the new pari.
+// G: Same will add the new pari.
 $capitals["South Korea"] = "Seoul";
+//-IMP:--------------------------------------------
+
+
 //TAG:  will work similar ...
 //array_push()
 //array_pop()
 //array_shift()
 //array_reverse()
-
+array_push($capitals,("Nagpur","Narsada");
 
 //B: this will create an array with just KEYS. or we can definetly use only $country in for each loop.
 $countries = array_keys($capitals);

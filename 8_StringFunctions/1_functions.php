@@ -44,4 +44,5 @@ $arrayOfAll = [
 foreach ($arrayOfAll as $keys => $values) {
     echo "{$keys} => {$values}\n";
 
+
 }
