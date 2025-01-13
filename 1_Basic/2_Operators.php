@@ -31,3 +31,4 @@ echo $total;
 // 4 = +   -
 // IMP: in the above sequence if "MORE THAN ONE" same
 // importance occurs at a point use LEFT -> to right.
+//

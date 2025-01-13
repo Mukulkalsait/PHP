@@ -16,11 +16,12 @@
         <option value="HotDog">HotDog</option>
         <option value="burger">burger</option>
       </select>
-    <input type="number" name="amount" placeholder="Inter amount">
+    <input type="number" name="amount" placeholder="Inter amount" id="amount">
     <input type="submit" name="submit" placeholder="submit">
     
     </form>
   
+    <script src="2_app.js"></script>
 </body>
 </html>
 
