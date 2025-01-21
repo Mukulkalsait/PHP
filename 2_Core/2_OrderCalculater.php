@@ -41,7 +41,6 @@ $foodArray = [
   "burger" => 79,
 ];
 
-
 if (isset($_POST["submit"])) {
     if (empty($food) || empty($num_of_plates)) { // IMP: here if (a || b) even one of them is eampty then if= true ∴ not working
         echo"<p style=\"color: red;\"> Option and number of Plates are menditory !!!</p>";

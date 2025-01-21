@@ -9,6 +9,14 @@ $capitals = array(
   "Britan" => "London"
    );
 
+$names = [
+  "mukul" => "kalsait",
+  "akhilesh" => "site",
+  "kaiwalya" => "kalsait",
+  "shruti" => "girde",
+  "yougeshwari" => "bhanuse",
+];
+
 echo $capitals["India"] . "\n";
 
 //-IMP:--------------------------------------------
@@ -24,7 +32,7 @@ $capitals["South Korea"] = "Seoul";
 //array_pop()
 //array_shift()
 //array_reverse()
-array_push($capitals,("Nagpur","Narsada");
+array_push($capitals, ("Nagpur ,Narsada"));
 
 //B: this will create an array with just KEYS. or we can definetly use only $country in for each loop.
 $countries = array_keys($capitals);
@@ -50,3 +58,10 @@ foreach ($capitals as $countriN  => $capital) {
     echo "{$counter}) {$countriN}=> {$capital}\n";
     $counter++;
 }
+foreach ($names as $fname => $lname) {
+    echo "$lname is the last name of $fname \n";
+}
+
+
+array_push($names, [ "motu" => "girde" ]);
+echo($names["motu"]);
