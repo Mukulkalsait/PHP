@@ -32,3 +32,29 @@ echo $total;
 // IMP: in the above sequence if "MORE THAN ONE" same
 // importance occurs at a point use LEFT -> to right.
 //
+
+
+
+// B: new string operators
+
+$string  = "hello";
+$string  .= "{ this is concadanated part of the main string  }";  // IMP: VVVIMP
+
+
+echo " \n";
+echo $string;
+
+// G: with this method we can concade the string in the same VAR without adding new.
+echo "\n \n";
+$newline = "This ";
+$newline .= "is ";
+$newline .= "the ";
+$newline .= "line ";
+$newline .= "we ";
+$newline .= "produced ";
+$newline .= "with ";
+$newline .= ".= ";
+$newline .= "\{ dot operators }";
+
+
+echo $newline;
